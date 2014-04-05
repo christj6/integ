@@ -25,15 +25,15 @@ let f x = x^2
 
 approx f 0 10 100
 
-We get: 333.25
+We get: 333.32500000000005
 
 approx f 0 10 10000
 
-We get: 333.33234
+We get: 333.33333249999947
 
 approx f 0 10 100000
 
-We get: 333.32538
+We get: 333.33333332500325
 
 
 Is it close?
