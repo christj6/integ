@@ -17,3 +17,18 @@ and 100 refers to the number of divisions.
 You will get an approximation. Put in a giant number for the # of divisions and it's about as good as a normal integral.
 
 In the future, the plan is to include more approximation methods, and some other features.
+
+-----------------------------
+An example:
+let f x = x^2
+approx f 0 10 100
+We get: 333.25
+approx f 0 10 10000
+We get: 333.33234
+approx f 0 10 100000
+We get: 333.32538
+
+Is it close?
+x^2 dx = (1/3)x^3 + c
+x^2 dx from 0 to 10 = (1/3) x 10^3 - (1/3) x 0^3 = 1000/3 = 333.33 (repeating)
+It's pretty close.
