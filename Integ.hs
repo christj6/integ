@@ -6,9 +6,6 @@ module Integ where
 
 -- then type in: approx f a b (# of divisions -- the more divisions, the more accurate the approximation), which will approximate the definite integral of f(x) from a to b.
 
-adds :: Int -> Int -> Int
-adds x y = x + y
-
 approx :: (Float -> Float) -> Float -> Float -> Float -> Float
 approx f a b divisions = (rawSum f a b 1 divisions)*deltaX
 	where deltaX = (b - a)/(divisions) 
