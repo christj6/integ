@@ -19,5 +19,5 @@ rawSum f a b i divisions
 
 -- derivative approximation
 derive :: (Double -> Double) -> (Double -> Double)
-derive f x = g x
-	where g x = (f(x + 0.000000001) - f(x))/0.000000001
+derive f x = (f(x + h) - f(x))/h
+	   where h = 0.000000001
