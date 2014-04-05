@@ -4,7 +4,7 @@ module Integ where
 -- start off the program by typing in:
 -- let f x = (here goes your function with x's included)
 
--- then type in: approx f 0 10 100, which will approximate the definite integral of f(x) from a to b.
+-- then type in: approx f a b (# of divisions -- the more divisions, the more accurate the approximation), which will approximate the definite integral of f(x) from a to b.
 
 adds :: Int -> Int -> Int
 adds x y = x + y
