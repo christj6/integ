@@ -6,6 +6,7 @@ Approximates definite integrals of functions using bounds.
 First, start it up:
 
 > ghci
+
 > :l Integ.hs
 
 Decide on the function you'll use:
