@@ -3,11 +3,16 @@ integ
 
 Approximates definite integrals of functions using bounds.
 
-First, start it up (:l Integ.hs)
+First, start it up:
 
-Decide on the function you'll use (let f x = x^2)
+> ghci
+> :l Integ.hs
 
-Call the approx function (follows the syntax: approx f 0 10 100)
+Decide on the function you'll use:
+> let f x = x^2
+
+Call the approx function -- follows the syntax: 
+> approx f 0 10 100
 
 In that instance, f refers to the function,
 0 refers to the starting bound,
