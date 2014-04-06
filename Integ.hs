@@ -17,7 +17,6 @@ rawSum f a b i divisions
 	where deltaX = (b - a)/(divisions)
 
 
--- derivative approximation
-derive :: (Double -> Double) -> (Double -> Double)
-derive f x = (f(x + h) - f(x))/h
-	   where h = 0.000000001
+-- derivative approximation: call it like -- derive (^2) 2 0.000000001
+derive :: (Double -> Double) -> Double -> (Double -> Double)
+derive f x h = (f(x + h) - f(x))/h
