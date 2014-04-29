@@ -20,3 +20,9 @@ rawSum f a b i divisions
 -- derivative approximation: call it like -- derive (^2) 2 0.000000001
 derive :: (Double -> Double) -> Double -> (Double -> Double)
 derive f x h = (f(x + h) - f(x))/h
+
+-- arc length approximation: work in progress
+toBeIntegrated f x = sqrt((derive f x 0.00001)**2 + 1)
+-- let f x = x^2
+-- let g x = toBeIntegrated f x
+-- approx g 0 1 100 -- 1.4789
