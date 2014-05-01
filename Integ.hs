@@ -21,8 +21,9 @@ rawSum f a b i divisions
 derive :: (Double -> Double) -> Double -> (Double -> Double)
 derive f x h = (f(x + h) - f(x))/h
 
--- arc length approximation: work in progress
-toBeIntegrated f x = sqrt((derive f x 0.00001)**2 + 1)
--- let f x = x^2
--- let g x = toBeIntegrated f x
--- approx g 0 1 100 -- 1.4789
+-- arc length approximation, given a function and 2 bounds
+arcLength :: (Double -> Double) -> Double -> Double -> Double
+arcLength f a b = approx (toBeIntegrated f) a b 10000
+	where toBeIntegrated f x = sqrt((derive f x 0.00001)**2 + 1)
+
+
