@@ -98,3 +98,7 @@ Interesting behavior as delta-x gets closer and closer to 0.
 > *Integ> derive (^2) 2 0.0000000000000001
 
 > 0.0
+
+--------------
+
+I tested the arcLength approximation by going to Wolfram (http://www.wolframalpha.com/) and entering something along the lines of "arc length of y=sin(x)^2 from x=0 to pi" (function and bounds vary).
